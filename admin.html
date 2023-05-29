@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <style>
+    body {
+      background-image: url("imgs/login.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 300px;
+      margin: 100px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"],
+    .custom-button {
+      width: 100%;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    .custom-button:hover {
+      background-color: #45a049;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Welcome, Admin</h1>
+    </div>
+
+
+    <div style="margin-top: 20px;">
+      <button onclick="window.location.href = 'baggage.php'" class="custom-button">Add Baggage</button>
+    </div>
+
+    <div style="margin-top: 10px;">
+      <button onclick="window.location.href = 'reservation.php'" class="custom-button">Add Reservation</button>
+    </div>
+
+    <div style="margin-top: 10px;">
+      <button onclick="window.location.href = 'flight.php'" class="custom-button">Add Flight</button>
+    </div>
+  </div>
+</body>
+</html>
